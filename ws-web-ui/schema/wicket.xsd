@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://wicket.apache.org/">
+
+    <xs:attribute name="id" type="xs:string"/>
+    <xs:attribute name="message" type="xs:string"/>
+
+    <xs:element name="panel" type="xs:string"/>
+    <xs:element name="border" type="xs:string"/>
+    <xs:element name="link" type="xs:string"/>
+    <xs:element name="extend" type="xs:string"/>
+    <xs:element name="child" type="xs:string"/>
+    <xs:element name="body" type="xs:string"/>
+    <xs:element name="remove" type="xs:string"/>
+    <xs:element name="head" type="xs:string"/>
+    <xs:element name="container" type="xs:string"/>
+    <xs:element name="enclosure" type="xs:string"/>
+
+    <xs:element name="message">
+        <xs:complexType>
+            <xs:attribute name="key" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
